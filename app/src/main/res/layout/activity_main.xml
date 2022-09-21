@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_gradiente"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inp_personas_nom"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/nom_usu"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/inp_personas_ape"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/ape_usu"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_personas_nom" />
+
+    <EditText
+        android:id="@+id/inp_personas_edad"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/edad_usu"
+
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_personas_ape" />
+
+    <EditText
+        android:id="@+id/inp_personas_email"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/email_usu"
+
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_personas_edad" />
+
+    <EditText
+        android:id="@+id/inp_personas_tel"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/tel_usu"
+
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_personas_email" />
+
+    <Button
+        android:id="@+id/btn_personas"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/boton_redondeado"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_personas_tel" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="131dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="40dp"
+        android:rotationX="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/avatar_round"
+        tools:srcCompat="@mipmap/avatar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

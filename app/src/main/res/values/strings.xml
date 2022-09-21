@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Primera App</string>
+    <string name="nom_usu">Nombre</string>
+    <string name="ape_usu">Apellido</string>
+    <string name="edad_usu">Edad</string>
+    <string name="tel_usu">Teléfono</string>
+    <string name="email_usu">Correo electrónico</string>
+    <string name="prof_usu">Profesión</string>
+    <string name="alt_usu">Altura</string>
+    <string name="peso_usu">Peso</string>
+    <string name="calc">Calcular</string>
+    <string name="multiplicar">x</string>
+</resources>

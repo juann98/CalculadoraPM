@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_gradiente"
+    tools:context=".VistaVehiculos">
+
+    <Button
+        android:id="@+id/btn_carros"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/boton_redondeado"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_carros_motor" />
+
+    <EditText
+        android:id="@+id/inp_carros_marca"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Marca"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/inp_carros_modelo"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Modelo"
+        android:inputType="textPersonName"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_carros_marca" />
+
+    <EditText
+        android:id="@+id/inp_carros_color"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Color"
+        android:inputType="textPersonName"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_carros_modelo" />
+
+    <EditText
+        android:id="@+id/inp_carros_ano"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Año"
+        android:inputType="number"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_carros_color" />
+
+    <EditText
+        android:id="@+id/inp_carros_puertas"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Puertas"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_carros_ano" />
+
+    <EditText
+        android:id="@+id/inp_carros_motor"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Motor"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_carros_puertas" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/carro2_round"
+        tools:srcCompat="@mipmap/carro2_round" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

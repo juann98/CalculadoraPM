@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_gradiente"
+    tools:context=".vista_imc">
+
+    <Button
+        android:id="@+id/btn_imc"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/boton_redondeado"
+        android:text="Calcular"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_imc_peso" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Calcular IMC"
+        android:textSize="30sp"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inp_imc_altura"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Altura"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/inp_imc_peso"
+        android:layout_width="@dimen/ancho_inp"
+        android:layout_height="@dimen/alto_inp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_imc_altura" />
+
+    <TextView
+        android:id="@+id/resultado_imc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_imc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

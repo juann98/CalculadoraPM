@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="lateral">30dp</dimen>
+    <dimen name="ancho_inp">285dp</dimen>
+    <dimen name="alto_inp">59dp</dimen>
+    <dimen name="btn_alto">70sp</dimen>
+
+
+
+
+</resources>
